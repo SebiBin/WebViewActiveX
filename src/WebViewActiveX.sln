@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A2D12BA2-2774-489A-B867-F56E46D6F43F}") = "WebViewActiveX", "WebViewActiveX.csproj", "{6D8D1D2E-DC11-4256-9F24-3224A44367AC}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D8D1D2E-DC11-4256-9F24-3224A44367AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8D1D2E-DC11-4256-9F24-3224A44367AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8D1D2E-DC11-4256-9F24-3224A44367AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8D1D2E-DC11-4256-9F24-3224A44367AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {892E0CC0-BF43-4FFA-A3A9-58EC5F3070AF}
+	EndGlobalSection
+EndGlobal
