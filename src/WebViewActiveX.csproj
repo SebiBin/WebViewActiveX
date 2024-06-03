@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{225E9678-3718-4F0F-980A-76952F507105}</ProjectGuid>
+    <ProjectGuid>{6D8D1D2E-DC11-4256-9F24-3224A44367AC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>WebViewActiveX</RootNamespace>
     <AssemblyName>WebViewActiveX</AssemblyName>
