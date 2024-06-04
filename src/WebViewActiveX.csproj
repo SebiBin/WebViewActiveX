@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActiveXCtrlHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AxWebView.cs" />
     <Compile Include="ControlEvents.cs" />
     <Compile Include="WebView.cs">
       <SubType>UserControl</SubType>
@@ -66,11 +70,6 @@
     <PackageReference Include="System.Text.Json">
       <Version>8.0.3</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="WebView.resx">
-      <DependentUpon>WebView.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="sebibin.WebViewActiveX.snk" />

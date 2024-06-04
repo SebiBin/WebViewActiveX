@@ -11,6 +11,11 @@
             document.WebView.Source = address;
 
             document.getElementById("address").value = document.WebView.Source;
+
+            document.WebView.OnReturnInfo("test");
+        }
+        function onReturnInfo(info) {
+            alert(info);
         }
     </script>
 </head>
@@ -24,7 +29,7 @@
 
     <!-- Attaching to an ActiveX event-->
     <script language="javascript">
-        function WebView:: OnReturnInfo(returnInfo)
+        function WebView::ReturnInfo(returnInfo)
         {
             alert(returnInfo);
         }
@@ -37,6 +42,15 @@
                 document.WebView.Source = "https://www.google.pl"
                 // document.OurActiveX.Open(); //Running method from activeX
                 document.getElementById("address").value = document.WebView.Source;
+
+                var yourActiveXObject = document.getElementById("WebView");
+                if (typeof (yourActiveXObject) === undefined || yourActiveXObject === null) {
+                    alert("Unable to load ActiveX");
+                    return;
+                }
+
+                // attach events
+                var status = yourActiveXObject.attachEvent('ReturnInfo', onReturnInfo);
             }
             catch (Err) {
                 alert(Err.description);
